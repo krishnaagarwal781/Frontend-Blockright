@@ -1,5 +1,4 @@
-import React, { useEffect, useState, useContext } from "react";
-import axios from "axios"; // For making HTTP requests
+import React, {useState, useContext } from "react";
 import WalletIDMainContext from "../context/walletID/WalletIDMainContext";
 
 function NFTInfo() {
