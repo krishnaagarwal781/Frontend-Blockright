@@ -1,6 +1,6 @@
 import React from "react";
 import { BiSearchAlt2 } from "react-icons/bi"
-import { L_card } from "./L_card";
+import { Lcard } from "./Lcard";
 export const License = () => {
     return (
         <div className='w-[100%]'>
@@ -20,11 +20,11 @@ export const License = () => {
 
 
             <div className="flex flex-wrap mx-8    ">
-                <L_card heading="Noteworthy technology" />
-                <L_card heading="Noteworthy technology" />
-                <L_card heading="Noteworthy technology" />
-                <L_card heading="Noteworthy technology" />
-                <L_card heading="Noteworthy technology" />
+                <Lcard heading="Noteworthy technology" />
+                <Lcard heading="Noteworthy technology" />
+                <Lcard heading="Noteworthy technology" />
+                <Lcard heading="Noteworthy technology" />
+                <Lcard heading="Noteworthy technology" />
             </div>
 
 

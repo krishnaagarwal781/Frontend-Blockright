@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const L_card = (props) => {
+export const Lcard = (props) => {
   return (
     <div className='w-[100%]'>
                 <div className="h-[150px] w-[100%] mt-5 border-2">

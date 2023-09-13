@@ -10,7 +10,6 @@ import { Shopping } from "./pages/Shopping";
 import { Market } from "./pages/Market";
 import { AgreementPage } from "./pages/AgreementPage";
 import { User } from "./component/User";
-import { Login } from "./component/Login";
 import { NFT } from "./component/NFT";
 import Products from "./component/Products";
 import { Shop } from "./component/Shop";
