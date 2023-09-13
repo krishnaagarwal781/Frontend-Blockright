@@ -2,8 +2,9 @@ import React, {useState, useContext } from "react";
 import WalletIDMainContext from "../context/walletID/WalletIDMainContext";
 
 function NFTInfo() {
-  // eslint-disable-next-line no-unused-vars
+  
   const { 
+    // eslint-disable-next-line no-unused-vars
     fetchedWalletAddress , 
     // eslint-disable-next-line no-unused-vars
     fetchedWalletId } = useContext(WalletIDMainContext);
