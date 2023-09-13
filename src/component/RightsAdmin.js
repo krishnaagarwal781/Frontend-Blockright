@@ -42,7 +42,7 @@ const RightsAdmin = () => {
       .catch(function (error) {
         console.error(error);
       });
-  },[]);
+  },[setFetchRights]);
 
   const giveRights = (type, index, rightsId) => {
     const options = {
