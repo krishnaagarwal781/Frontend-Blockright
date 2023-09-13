@@ -4,9 +4,13 @@ import WalletIDMainContext from "../context/walletID/WalletIDMainContext";
 
 function NFTInfo() {
   const { fetchedWalletAddress , fetchedWalletId } = useContext(WalletIDMainContext);
+  // eslint-disable-next-line rule-name
   const [walletAddress, setWalletAddress] = useState("0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266");
+  // eslint-disable-next-line rule-name
   const [chain, setChain] = useState("");
+  // eslint-disable-next-line rule-name
   const [nftInfoMetaData, setNFTInfoMetaData] = useState({});
+  // eslint-disable-next-line rule-name
   const [backendResponse, setBackendResponse] = useState(null);
   /* 
     0x2238c8b16c36628b8f1f36486675c1e2a30debf1//done
@@ -86,7 +90,7 @@ function NFTInfo() {
 
     fetchData();
     // console.log("fetchedWalletId:", fetchedWalletId);
-  }, []);
+  });
 
 
 

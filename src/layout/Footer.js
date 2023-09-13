@@ -41,7 +41,7 @@ const Footer = () => {
                 >
                   Built on
                 </p>
-                <img className="w-[50px]" src={image} />
+                <img className="w-[50px]" src={image} alt="image" />
               </div>
             </div>
             <div className=" justify-end flex-grow flex flex-wrap md:pl-20 -mb-10 md:mt-0 mt-10 md:text-left text-center">

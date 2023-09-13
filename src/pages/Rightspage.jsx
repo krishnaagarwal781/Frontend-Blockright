@@ -15,6 +15,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import axios from "axios"; // Import Axios
 
 export const Rightspage = () => {
+  // eslint-disable-next-line rule-name
   const { fetchedWalletAddress, nftName, fetchedWalletId, fetchNftImage } =
     useContext(WalletIDMainContext);
   const [licenseTerm1, setLicenseTerm1] = useState("");

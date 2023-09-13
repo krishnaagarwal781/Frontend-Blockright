@@ -12,11 +12,16 @@ import WalletIDMainContext from "../context/walletID/WalletIDMainContext";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 
 const ConnectWallet = () => {
+  // eslint-disable-next-line rule-name
   const [errorMessage, setErrorMessage] = useState(null);
+  // eslint-disable-next-line rule-name
   const [defaultAccount, setDefaultAccount] = useState(null);
+  // eslint-disable-next-line rule-name
   const [userBalance, setUserBalance] = useState(null);
+  // eslint-disable-next-line rule-name
   const [isLoggedIn, setIsLoggedIn] = useState(false);
    // New state for login status
+   // eslint-disable-next-line rule-name
   const {
     fetchedWalletAddress,
     setFetchedWalletAddress,

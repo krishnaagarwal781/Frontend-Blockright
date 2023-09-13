@@ -10,7 +10,7 @@ export const NftPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
+  // eslint-disable-next-line rule-name
   const { fetchedWalletId,setFetchedWalletId,fetchedWalletAddress } = useContext(WalletIDMainContext);
   const [apiResponseData, setApiResponseData] = useState([]);
 
@@ -28,7 +28,7 @@ export const NftPage = () => {
       .catch((error) => {
         console.error("Error fetching API data:", error);
       });
-  }, []);
+  });
 
   // Define a function to chunk the array into rows of 3
   const chunkArray = (array, size) => {

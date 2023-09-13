@@ -9,7 +9,6 @@ function SignIn() {
   const [signUpEmail, setSignUpEmail] = useState('');
   const [signUpPassword, setSignUpPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
-  const [isLoggedIn,setLoggedIn]=useState(false);
   const navigate =useNavigate();
   const handleSignIn = async (e) => {
     e.preventDefault();
