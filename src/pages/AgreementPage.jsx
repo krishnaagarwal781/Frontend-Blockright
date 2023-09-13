@@ -2,7 +2,7 @@ import React, { useContext, useState ,useEffect} from "react";
 import { Nft } from "../components/Nft";
 import Navbar2 from "../components/Navbar2";
 import { Footer2 } from "../layout/Footer2";
-// eslint-disable-next-line rule-name
+// eslint-disable-next-line no-unused-vars
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import WalletIDMainContext from "../context/walletID/WalletIDMainContext";
 export const AgreementPage = () => {

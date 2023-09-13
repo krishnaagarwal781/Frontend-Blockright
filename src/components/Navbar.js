@@ -14,12 +14,12 @@ const Navbar = () => {
     window.scrollTo(0, 0);
   }, []);
   const [errorMessage, setErrorMessage] = useState(null);
-  // eslint-disable-next-line rule-name
+  // eslint-disable-next-line no-unused-vars
   const [defaultAccount, setDefaultAccount] = useState(null);
-  // eslint-disable-next-line rule-name
+  // eslint-disable-next-line no-unused-vars
   const [userBalance, setUserBalance] = useState(null);
   // const [connButtonText,setConnButtonText]=useState('Connect Wallet');
-  // eslint-disable-next-line rule-name
+  // eslint-disable-next-line no-unused-vars
   const connectWalletHandler = () => {
     if (window.ethereum) {
       window.ethereum.request({ method: 'eth_requestAccounts' })
