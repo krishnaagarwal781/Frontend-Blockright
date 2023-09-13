@@ -28,7 +28,7 @@ export const NftPage = () => {
       .catch((error) => {
         console.error("Error fetching API data:", error);
       });
-  });
+  },[fetchedWalletId]);
 
   // Define a function to chunk the array into rows of 3
   const chunkArray = (array, size) => {

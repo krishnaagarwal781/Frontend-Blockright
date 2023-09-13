@@ -21,76 +21,76 @@ function NFTInfo() {
     0x1544D2de126e3A4b194Cfad2a5C6966b3460ebE3//done
     */
 
-    const postData=(nftInfoMetaData)=>{
-      if (Object.keys(nftInfoMetaData).length > 0) {
-        const options = {
-          method: "POST",
-          url: "https://backblockright.onrender.com/nft/dummy",
-          headers: { "Content-Type": "application/json" },
-          data: {
-            userID: fetchedWalletId,
-            walletAddress: fetchedWalletAddress,
-            nftMetaData: nftInfoMetaData,
-            rightAllocated: {
-              cap: "",
-              hoodie: "",
-              tshirt: "",
-            },
-            lastSyncedOn: new Date().toISOString(),
-          },
-        };
+    // const postData=(nftInfoMetaData)=>{
+    //   if (Object.keys(nftInfoMetaData).length > 0) {
+    //     const options = {
+    //       method: "POST",
+    //       url: "https://backblockright.onrender.com/nft/dummy",
+    //       headers: { "Content-Type": "application/json" },
+    //       data: {
+    //         userID: fetchedWalletId,
+    //         walletAddress: fetchedWalletAddress,
+    //         nftMetaData: nftInfoMetaData,
+    //         rightAllocated: {
+    //           cap: "",
+    //           hoodie: "",
+    //           tshirt: "",
+    //         },
+    //         lastSyncedOn: new Date().toISOString(),
+    //       },
+    //     };
   
-        axios
-          .request(options)
-          .then(function (response) {
-            setBackendResponse(response.data);
-            console.log("Backend API response:", response.data);
-          })
-          .catch(function (error) {
-            console.error("Error sending data to backend API:", error);
-          });
-      }
-    }
+    //     axios
+    //       .request(options)
+    //       .then(function (response) {
+    //         setBackendResponse(response.data);
+    //         console.log("Backend API response:", response.data);
+    //       })
+    //       .catch(function (error) {
+    //         console.error("Error sending data to backend API:", error);
+    //       });
+    //   }
+    // }
     
- useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const url = `https://api.nftport.xyz/v0/accounts/${fetchedWalletAddress}?chain=ethereum`;
-        const api_key = "b7fb531b-40ef-4855-bcb0-56ff6374948f";
-        const headers = {
-          Authorization: api_key,
-          "Content-Type": "application/json",
-        };
+//  useEffect(() => {
+//     const fetchData = async () => {
+//       try {
+//         const url = `https://api.nftport.xyz/v0/accounts/${fetchedWalletAddress}?chain=ethereum`;
+//         const api_key = "b7fb531b-40ef-4855-bcb0-56ff6374948f";
+//         const headers = {
+//           Authorization: api_key,
+//           "Content-Type": "application/json",
+//         };
 
-        const response = await axios.get(url, { headers });
-        const nftData = response.data;
+//         const response = await axios.get(url, { headers });
+//         const nftData = response.data;
 
-        // Filter NFTs with non-null cached_file_url
-        const filteredNFTs = nftData.nfts.filter(
-          (nft) => nft.cached_file_url !== null
-        );
+//         // Filter NFTs with non-null cached_file_url
+//         const filteredNFTs = nftData.nfts.filter(
+//           (nft) => nft.cached_file_url !== null
+//         );
 
-        // Update state with filtered NFTs
+//         // Update state with filtered NFTs
 
-        const resData={
-          ...nftData,
-          nfts: filteredNFTs,
-        }
+//         const resData={
+//           ...nftData,
+//           nfts: filteredNFTs,
+//         }
 
-        setNFTInfoMetaData(resData);
+//         setNFTInfoMetaData(resData);
 
-        postData(resData)
+//         postData(resData)
 
-        // console.log("Third-party API response:", nftData);
-        console.log("Third-party API response:", filteredNFTs);
-      } catch (error) {
-        console.error("Error fetching NFT info:", error);
-      }
-    };
+//         // console.log("Third-party API response:", nftData);
+//         console.log("Third-party API response:", filteredNFTs);
+//       } catch (error) {
+//         console.error("Error fetching NFT info:", error);
+//       }
+//     };
 
-    fetchData();
-    // console.log("fetchedWalletId:", fetchedWalletId);
-  });
+//     fetchData();
+//     // console.log("fetchedWalletId:", fetchedWalletId);
+//   });
 
 
 
