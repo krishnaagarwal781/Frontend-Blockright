@@ -74,8 +74,8 @@ export const Rightspage = () => {
       url: "https://backblockright.onrender.com/drm/user/askRights/",
       headers: { "Content-Type": "application/json" },
       data: {
-        walletId: "64eca66eacc83a9b48cced8b",
-        nftId: "64eca5fec7a8560a60098330",
+        walletId: "6501f943165338942b3a141c",
+        nftId: "6501f953165338942b3a1432",
         userLicenseCondition: userLicenseCondition,
         imgSrc: state.data.imgSource,
         capRights: {
