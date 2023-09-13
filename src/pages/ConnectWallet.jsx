@@ -23,10 +23,13 @@ const ConnectWallet = () => {
    // New state for login status
    // eslint-disable-next-line no-unused-vars
   const {
+    // eslint-disable-next-line no-unused-vars
     fetchedWalletAddress,
     setFetchedWalletAddress,
+    // eslint-disable-next-line no-unused-vars
     fetchedWalletId,
     setFetchedWalletId,
+    // eslint-disable-next-line no-unused-vars
     fetchedWalletType,
     setFetchedWalletType,
   } = useContext(WalletIDMainContext);
