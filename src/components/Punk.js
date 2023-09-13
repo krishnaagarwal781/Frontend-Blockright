@@ -12,7 +12,7 @@ const Punk = () => {
       try {
         const response = await axios.get(
           "https://backblockright.onrender.com/user/getRights/",
-          { params: { walletId: "64fbfb06494b006f109d1528" } }
+          { params: { walletId: "6501f943165338942b3a141c" } }
         );
         const rightsData = Object.values(response.data);
         setFetchRights(rightsData);
