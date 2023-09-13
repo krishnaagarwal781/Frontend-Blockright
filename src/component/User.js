@@ -9,7 +9,7 @@ export const User = () => {
     // Define your Axios request options
     const options = {
       method: "GET",
-      url: "http://127.0.0.1:8000/admin/getUsers",
+      url: "https://backblockright.onrender.com/admin/getUsers",
       params: { adminId: "64e9acc80c8b7ac2f37f492f" },
     };
 

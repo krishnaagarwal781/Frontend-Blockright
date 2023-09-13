@@ -110,7 +110,7 @@ const Products = () => {
     // Send a PATCH request to update the merchTitle
     const options = {
       method: "PATCH",
-      url: `http://127.0.0.1:8000/ecommerce/editDetails/`,
+      url: `https://backblockright.onrender.com/ecommerce/editDetails/`,
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -143,7 +143,7 @@ const Products = () => {
     // Send a PATCH request to update the description
     const options = {
       method: "PATCH",
-      url: `http://127.0.0.1:8000/ecommerce/editDetails/`,
+      url: `https://backblockright.onrender.com/ecommerce/editDetails/`,
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -174,7 +174,7 @@ const Products = () => {
   useEffect(() => {
     const options = {
       method: "GET",
-      url: "http://127.0.0.1:8000/ecommerce/getAll/",
+      url: "https://backblockright.onrender.com/ecommerce/getAll/",
       params: { adminId: "64e9acc80c8b7ac2f37f492f" },
     };
 
@@ -192,7 +192,7 @@ const Products = () => {
   const handlePriceSave = async (productId) => {
     const options = {
       method: "PATCH",
-      url: "http://127.0.0.1:8000/ecommerce/editDetails/",
+      url: "https://backblockright.onrender.com/ecommerce/editDetails/",
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -224,7 +224,7 @@ const Products = () => {
 
     const options = {
       method: "PATCH",
-      url: `http://127.0.0.1:8000/ecommerce/editDetails/`,
+      url: `https://backblockright.onrender.com/ecommerce/editDetails/`,
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -254,7 +254,7 @@ const Products = () => {
     // Send a PATCH request to update the expiry date
     const options = {
       method: "PATCH",
-      url: `http://127.0.0.1:8000/ecommerce/editDetails/`,
+      url: `https://backblockright.onrender.com/ecommerce/editDetails/`,
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -287,7 +287,7 @@ const Products = () => {
 
     const options = {
       method: "PATCH",
-      url: `http://127.0.0.1:8000/ecommerce/editDetails/`,
+      url: `https://backblockright.onrender.com/ecommerce/editDetails/`,
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -319,7 +319,7 @@ const Products = () => {
 
     const options = {
       method: "PATCH",
-      url: `http://127.0.0.1:8000/ecommerce/editDetails/`,
+      url: `https://backblockright.onrender.com/ecommerce/editDetails/`,
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -352,7 +352,7 @@ const Products = () => {
     // Send a PATCH request to update the image URLs
     const options = {
       method: "PATCH",
-      url: `http://127.0.0.1:8000/ecommerce/editDetails/`,
+      url: `https://backblockright.onrender.com/ecommerce/editDetails/`,
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -383,7 +383,7 @@ const Products = () => {
     // Send a PATCH request to toggle the isPublished attribute
     const options = {
       method: "PATCH",
-      url: `http://127.0.0.1:8000/ecommerce/editDetails/`,
+      url: `https://backblockright.onrender.com/ecommerce/editDetails/`,
       params: { adminId: "64f85ac8a4fb9e04cd207be5", productId: productId },
       headers: { "Content-Type": "application/json" },
       data: {

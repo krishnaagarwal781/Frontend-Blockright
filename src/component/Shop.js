@@ -8,7 +8,7 @@ export const Shop = () => {
     useEffect(() => {
         const options = {
           method: "GET",
-          url: "http://127.0.0.1:8000/ecommerce/getAll/",
+          url: "https://backblockright.onrender.com/ecommerce/getAll/",
           params: { adminId: "64f85ac8a4fb9e04cd207be5" },
         };
       

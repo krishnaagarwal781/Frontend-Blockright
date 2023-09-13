@@ -71,7 +71,7 @@ export const Rightspage = () => {
     // console.log(merch3LicenseCondition)
     const options = {
       method: "POST",
-      url: "http://127.0.0.1:8000/drm/user/askRights/",
+      url: "https://backblockright.onrender.com/drm/user/askRights/",
       headers: { "Content-Type": "application/json" },
       data: {
         walletId: "64fbfb06494b006f109d1528",

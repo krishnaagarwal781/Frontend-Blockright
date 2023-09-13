@@ -11,7 +11,7 @@ const Punk = () => {
     const fetchRightsData = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/user/getRights/",
+          "https://backblockright.onrender.com/user/getRights/",
           { params: { walletId: "64fbfb06494b006f109d1528" } }
         );
         const rightsData = Object.values(response.data);

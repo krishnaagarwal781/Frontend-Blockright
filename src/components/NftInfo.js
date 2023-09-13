@@ -25,7 +25,7 @@ function NFTInfo() {
       if (Object.keys(nftInfoMetaData).length > 0) {
         const options = {
           method: "POST",
-          url: "http://127.0.0.1:8000/nft/dummy",
+          url: "https://backblockright.onrender.com/nft/dummy",
           headers: { "Content-Type": "application/json" },
           data: {
             userID: fetchedWalletId,
@@ -100,7 +100,7 @@ function NFTInfo() {
   //   if (Object.keys(nftInfoMetaData).length > 0) {
   //     const options = {
   //       method: "POST",
-  //       url: "http://127.0.0.1:8000/nft/dummy",
+  //       url: "https://backblockright.onrender.com/nft/dummy",
   //       headers: { "Content-Type": "application/json" },
   //       data: {
   //         userID: fetchedWalletId,

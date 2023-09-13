@@ -13,7 +13,7 @@ const RightsAdmin = () => {
   useEffect(() => {
     const options = {
       method: "GET",
-      url: "http://127.0.0.1:8000/drm/getRights/",
+      url: "https://backblockright.onrender.com/drm/getRights/",
     };
 
     axios
@@ -47,7 +47,7 @@ const RightsAdmin = () => {
   const giveRights = (type, index, rightsId) => {
     const options = {
       method: "PATCH",
-      url: "http://127.0.0.1:8000/drm/admin/giveRights/",
+      url: "https://backblockright.onrender.com/drm/admin/giveRights/",
       params: { adminId: "64e9acc80c8b7ac2f37f492f" },
       headers: { "Content-Type": "application/json" },
       data: {
@@ -77,7 +77,7 @@ const RightsAdmin = () => {
   const AddNewProduct = (imgUrl, NftId, type, totalQuantity,merchTitle) => {
     const options = {
       method: "POST",
-      url: "http://127.0.0.1:8000/ecommerce/add/",
+      url: "https://backblockright.onrender.com/ecommerce/add/",
       params: { adminId: "64e9acc80c8b7ac2f37f492f" },
       headers: { "Content-Type": "application/json" },
       data: {

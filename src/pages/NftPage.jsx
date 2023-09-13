@@ -17,7 +17,7 @@ export const NftPage = () => {
   useEffect(() => {
     // Make an API request to fetch data dynamically
     axios
-      .get("http://127.0.0.1:8000/nft/get/", {
+      .get("https://backblockright.onrender.com/nft/get/", {
         params: { userID: fetchedWalletId },
       })
       .then((response) => {

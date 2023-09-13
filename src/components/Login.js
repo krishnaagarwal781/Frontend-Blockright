@@ -15,7 +15,7 @@ function SignIn() {
 
     try {
       console.log('Attempting sign-in...');
-      const response = await axios.post('http://127.0.0.1:8000/admin/login', {
+      const response = await axios.post('https://backblockright.onrender.com/admin/login', {
         mobile: signInEmail,
         password: signInPassword,
       });
@@ -55,7 +55,7 @@ function SignIn() {
 
     try {
       console.log('Attempting sign-up...');
-      const response = await axios.post('http://127.0.0.1:8000/admin/signin/', {
+      const response = await axios.post('https://backblockright.onrender.com/admin/signin/', {
         fullName: signUpFullName,
         password: signUpPassword,
         mobile: parseInt(signUpEmail),

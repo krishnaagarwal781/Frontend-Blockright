@@ -9,7 +9,7 @@ export const NFT = () => {
         // Define your Axios request options
         const options = {
             method: "GET",
-            url: "http://127.0.0.1:8000/admin/getAllNft",
+            url: "https://backblockright.onrender.com/admin/getAllNft",
             params: { adminId: "64e9acc80c8b7ac2f37f492f" },
         };
 

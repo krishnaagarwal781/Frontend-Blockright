@@ -67,7 +67,7 @@ const ConnectWallet = () => {
           };
 
           axios
-            .post("http://127.0.0.1:8000/user/login", dataToSave)
+            .post("https://backblockright.onrender.com/user/login", dataToSave)
             .then(function (response) {
               console.log(response.data);
               // setFetchedWalletAddress(response.walletId);
