@@ -33,11 +33,11 @@ function App() {
         <>
           <div>
             <Routes>
-              <Route path="https://blockright.netlify.app/AdminLogin" element={<AdminLogin />} />
+              <Route path="/AdminLogin" element={<AdminLogin />} />
 
               {/*Admin Dashboard */}
               <Route
-                path="https://blockright.netlify.app/AdminDashboard"
+                path="/AdminDashboard"
                 element={
                   <AdminDashboardLayout>
                     <User />
@@ -45,7 +45,7 @@ function App() {
                 }
               />
               <Route
-                path="https://blockright.netlify.app/AdminDashboard/nft"
+                path="/AdminDashboard/nft"
                 element={
                   <AdminDashboardLayout>
                     <NFT />
@@ -54,7 +54,7 @@ function App() {
               />
               
               <Route
-                path="https://blockright.netlify.app/AdminDashboard/products"
+                path="/AdminDashboard/products"
                 element={
                   <AdminDashboardLayout>
                     <Products />
@@ -62,7 +62,7 @@ function App() {
                 }
               />
               <Route
-                path="https://blockright.netlify.app/AdminDashboard/rights"
+                path="/AdminDashboard/rights"
                 element={
                   <AdminDashboardLayout>
                     <RightsAdmin />
@@ -70,7 +70,7 @@ function App() {
                 }
               />
               <Route
-                path="https://blockright.netlify.app/AdminDashboard/orders"
+                path="/AdminDashboard/orders"
                 element={
                   <AdminDashboardLayout>
                     <Orders />
@@ -79,7 +79,7 @@ function App() {
               />
 
               <Route
-                path="https://blockright.netlify.app/AdminDashboard/shop"
+                path="/AdminDashboard/shop"
                 element={
                   <AdminDashboardLayout>
                     <Shop />
@@ -87,7 +87,7 @@ function App() {
                 }
               />
               <Route
-                path="https://blockright.netlify.app/AdminDashboard/license"
+                path="/AdminDashboard/license"
                 element={
                   <AdminDashboardLayout>
                     <License />
@@ -95,7 +95,7 @@ function App() {
                 }
               />
               <Route
-                path="https://blockright.netlify.app/AdminDashboard/payment"
+                path="/AdminDashboard/payment"
                 element={
                   <AdminDashboardLayout>
                     <Payment />
@@ -104,15 +104,15 @@ function App() {
               />
 
               <Route exact path="/" element={<LandingPage />} />
-              <Route path="https://blockright.netlify.app/Connectwallet" element={<ConnectWallet />} />
-              <Route path="https://blockright.netlify.app/Dashboard" element={<Dashboard />} />
-              <Route path="https://blockright.netlify.app/NftPage" element={<NftPage />} />
-              <Route path="https://blockright.netlify.app/Rightspage" element={<Rightspage />} />
-              <Route path="https://blockright.netlify.app/Shopping" element={<Shopping />} />
-              <Route path="https://blockright.netlify.app/Market" element={<Market />} />
-              <Route path="https://blockright.netlify.app/AgreementPage" element={<AgreementPage />} />
-              <Route path="https://blockright.netlify.app/ConfirmorderPage" element={<ConfirmorderPage />} />
-              <Route path="https://blockright.netlify.app/Loader" element={<Loader />} />
+              <Route path="/Connectwallet" element={<ConnectWallet />} />
+              <Route path="/Dashboard" element={<Dashboard />} />
+              <Route path="/NftPage" element={<NftPage />} />
+              <Route path="/Rightspage" element={<Rightspage />} />
+              <Route path="/Shopping" element={<Shopping />} />
+              <Route path="/Market" element={<Market />} />
+              <Route path="/AgreementPage" element={<AgreementPage />} />
+              <Route path="/ConfirmorderPage" element={<ConfirmorderPage />} />
+              <Route path="/Loader" element={<Loader />} />
               <Route exact path="*" element={<ErrorPage />} />
             </Routes>
           </div>
